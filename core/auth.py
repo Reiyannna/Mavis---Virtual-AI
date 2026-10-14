@@ -1,15 +1,13 @@
 # core/auth.py
 """Spoken-password helpers shared by the brain and the ambient listener.
 
-Matching is whole-word, so "similar" or "hilarious" never contains the password
-"ila". The same patterns are used to scrub the words out of anything that is
+Matching is whole-word, so "similar" or "hilarious" never contains the password. The same patterns are used to scrub the words out of anything that is
 saved to the background buffer, the vault, or sent to Gemini.
 """
 import re
 
 VALID_PASSWORDS = [
-    "aila", "ai'la", "ayla", "isla", "eila", "ila", "eyla",
-    "ay la", "ai la", "jelly", "je ly",
+    "password", "pass word", "please", "mavis", "mav is", "mav is please", "mav is password", "mav is pass word",
 ]
 
 
