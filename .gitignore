@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.tmp
+
+# Secrets - NEVER commit these
+config/
+*.env
+.env
+
+# Personal runtime data (alarms, memory vault, logs)
+Brain/
+*.log

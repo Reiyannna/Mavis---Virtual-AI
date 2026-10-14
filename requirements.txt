@@ -1,0 +1,27 @@
+# Mavis dependencies. Install with:  pip install -r requirements.txt
+# Python 3.10+ on Windows.
+
+# --- brain ---
+google-genai                  # Gemini API (default brain; not needed if MAVIS_LLM_PROVIDER=ollama)
+
+# --- Google Workspace tools (Gmail / Calendar / Drive) ---
+google-api-python-client
+google-auth
+google-auth-oauthlib
+
+# --- voice ---
+edge-tts                      # free online TTS
+pygame                        # audio playback
+SpeechRecognition             # mic input (Google STT)
+keyboard                      # spacebar interrupt + mute hotkeys
+pyttsx3                       # NEW: offline fallback voice when edge-tts is unreachable
+
+# --- local tools ---
+pypdf                         # read PDFs
+python-docx                   # read Word docs
+pyperclip                     # clipboard
+dateparser                    # natural-language alarm times ("in 10 minutes")
+Pillow                        # avatar GUI images
+
+# --- optional ---
+pygetwindow                   # VS Code window detection (gracefully skipped if missing)
